@@ -24,9 +24,9 @@ public interface ConversationThread {
     ThreadType getType();
     ThreadState getState();
     String getBody();
-    List<String> getToList();
-    List<String> getCcList();
-    List<String> getBccList();
+    List<String> getTo();
+    List<String> getCc();
+    List<String> getBcc();
     List<Attachment> getAttachments();
     boolean isAssigned();
     boolean isActive();
@@ -46,9 +46,9 @@ public interface ConversationThread {
     void setState(ThreadState state);
     void setStatus(Status status);
     void setBody(String body);
-    void setToList(List<String> toList);
-    void setCcList(List<String> ccList);
-    void setBccList(List<String> bccList);
+    void setTo(List<String> to);
+    void setCc(List<String> cc);
+    void setBcc(List<String> bcc);
     void setAttachments(List<Attachment> attachments);
     void setAssignedTo(MailboxUserRef assignedTo);
     void setCreatedBy(PersonRef person);

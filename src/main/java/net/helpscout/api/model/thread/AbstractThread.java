@@ -17,9 +17,9 @@ public class AbstractThread extends BaseLineItem implements ConversationThread {
     private ThreadType type;
     private ThreadState state;
     private String body;
-    private List<String> toList = new ArrayList<String>();
-    private List<String> ccList = new ArrayList<String>();
-    private List<String> bccList = new ArrayList<String>();
+    private List<String> to = new ArrayList<String>();
+    private List<String> cc = new ArrayList<String>();
+    private List<String> bcc = new ArrayList<String>();
     private List<Attachment> attachments = new ArrayList<Attachment>();
     
     public boolean isPublished() {

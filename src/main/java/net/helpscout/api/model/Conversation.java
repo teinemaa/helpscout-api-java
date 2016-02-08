@@ -37,18 +37,18 @@ public class Conversation {
     private String closedAt;
     private UserRef closedBy;
     private PersonRef createdBy;
-    private List<String> ccList;
-    private List<String> bccList;
+    private List<String> cc;
+    private List<String> bcc;
     private List<String> tags;
     private List<LineItem> threads;
     private List<? extends CustomFieldResponse> customFields;
 
-    public boolean hasCcList() {
-        return getCcList() != null && !getCcList().isEmpty();
+    public boolean hasCc() {
+        return getCc() != null && !getCc().isEmpty();
     }
 
-    public boolean hasBccList() {
-        return getBccList() != null && !getBccList().isEmpty();
+    public boolean hasBcc() {
+        return getBcc() != null && !getBcc().isEmpty();
     }
 
     public boolean hasThreads() {
